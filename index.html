@@ -11,7 +11,7 @@
     <div>
 
         <h1 id="titulo">Cadastro Cliente</h1>
-        <h1 id="subtitulo">Informações</h1>
+        <h2 id="info">Informações</h2>
 
     </div>
     
@@ -35,6 +35,31 @@
         <div class="campo">
             <label for="email"><strong>Email:</strong></label>
             <input type="email" name="email" id="email" required>
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2 id="endereco">Endereço</h2>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="endereco"><strong>Endereço: </strong></label>
+                <input type="text" name="endereco" id="endereco">
+
+            </div>
+
+            <div class="campo">
+                <label for="cidade"><strong>Cidade: </strong></label>
+                <input type="text" name="cidade" id="endereco">
+
+            </div>
+
+        </fieldset>
+        
+        <div class="campo">
+            
+            <label for="senha"><strong>senha:</strong></label>
+            <input type="password" name="senha" id="senha" required>
         </div>
         <!--Não decidi ainda oque botar/é um input de escolha única -->
         <div class="campo">
@@ -61,15 +86,20 @@
         <!--Parte onde seleciona as categorias preferidas -->
         <fieldset class="grupo">
 
-            <label><strong>Selecione as Categorias:</strong></label> <br><br>
-            <input type="checkbox" id="moda1" name="moda1" value="roupas">
-            <label for="moda">Roupas</label>
+            <div id="check">
+                <label><strong>Selecione as Categorias:</strong></label> <br><br>
+                <input type="checkbox" id="moda1" name="moda1" value="roupas">
+                <label for="moda">Roupas</label>
+                <br>
 
-            <input type="checkbox" id="moda2" name="moda2" value="acessorios">
-            <label for="moda">Acessorios</label>
+                <input type="checkbox" id="moda2" name="moda2" value="acessorios">
+                <label for="moda">Acessorios</label>
+                <br>
 
-            <input type="checkbox" id="food" name="food" value="comidas">
-            <label for="comidas">Comidas</label>
+                <input type="checkbox" id="food" name="food" value="comidas">
+                <label for="comidas">Comidas</label>
+                <br>
+            </div>
 
         </fieldset>
 
