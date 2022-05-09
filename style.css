@@ -3,34 +3,19 @@
     padding: 0;
 }
 
-#titulo{
-    font-family: sans-serif;
-    color:rgba(0, 0, 0, 0.719);
-    margin-left: 7%;
-}
-
-#subtitulo{
-    font-family: sans-serif;
-    color:rgba(0, 0, 0, 0.719);
-    margin-left: 10%;
-}
-
-fieldset{
-    border: 0;
-}
-
 body{
-    background-color:rgb(231, 231, 231);
-    font-family: sans-serif;
     font-size: 1em;
-    color:rgba(0, 0, 0, 0.719);
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
 }
 
-input, selct, button{
+input, button{
     border-radius: 5px;
+}
+
+fieldset{
+    border: 0;
 }
 
 .campo{
@@ -39,7 +24,6 @@ input, selct, button{
 
 .campo label{
     margin-bottom: 0.2em;
-    color:rgba(0, 0, 0, 0.664);
     display: block;
 }
 
@@ -48,19 +32,11 @@ fieldset.grupo{
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select {
+.campo input[type="text"], .campo input[type="password"]{
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
-}
-
-.campo select option{
-    padding-right: 1em;
-}
-
-.campo input:focus, .campo select:focus{
-    background: #E0E0F8;
 }
 
 .botao{
@@ -68,27 +44,34 @@ fieldset.grupo{
     background: #6f6f6f;
     border: 0;
     margin-bottom: 1em;
-    color: #ffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position:absolute;
-    top: 150%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    cursor: pointer;
+    display:inline;
 }
 
 .botao:hover{
-    background: #6e6e6e;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
+    background: #8f8f8f;
+   
 }
 
-.botao, select{
-    cursor: pointer;
+.lado{
+    display: flex;
+    height: auto;
+    bottom: 0;
 }
 
-#check{
-    display: inline-block;
+.direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
