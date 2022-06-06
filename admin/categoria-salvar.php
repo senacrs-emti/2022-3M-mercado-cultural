@@ -43,5 +43,9 @@ include_once '_menu.php';
      <input type="submit" value="Enviar">
 </form>
 
+</main>
+
+<?php
+include_once '_footer.php';
 
 ?>
