@@ -43,7 +43,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logomcd.png" alt="">
+            <img src="images/logo.png.png" alt="">
             <span>
               Medion
             </span>
