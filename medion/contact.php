@@ -57,22 +57,22 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Menu <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Menu <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Sobre nós </a>
+                  <a class="nav-link" href="about.php"> Sobre nós </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="medicine.html"> Promoções</a>
+                  <a class="nav-link" href="medicine.php"> Promoções</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="buy.html"> Produtos </a>
+                  <a class="nav-link" href="buy.php"> Produtos </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="news.html"> Novidades </a>
+                  <a class="nav-link" href="news.php"> Novidades </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contato</a>
+                  <a class="nav-link" href="contact.php">Contato</a>
                 </li>
               </ul>
               <form class="form-inline ">

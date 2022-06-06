@@ -22,22 +22,22 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About </a>
+                  <a class="nav-link" href="about.php"> About </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="medicine.html"> Medicine </a>
+                  <a class="nav-link" href="medicine.php"> Medicine </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="buy.html"> Online Buy </a>
+                  <a class="nav-link" href="buy.php"> Online Buy </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="news.html"> News </a>
+                  <a class="nav-link" href="news.php"> News </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
               </ul>
               <form class="form-inline ">
