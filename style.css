@@ -4,8 +4,15 @@
     text-align: center;
 }
 
-div{
+.u-section-2 .u-container-layout-1{
+    padding: 30px 0 30px 30px;
+}
+
+
+
+div .u-image-1{
     display: block;
+    float:right;
 }
 
 body, .btn, label, select, input, textarea, h4, h5, h6{
