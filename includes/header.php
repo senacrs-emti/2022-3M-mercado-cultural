@@ -1,14 +1,10 @@
-
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
+<header class="header_section">
       <div class="container">
       </div>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+          <a class="navbar-brand" href="./index.php">
+            <img src="images/logo.png.png" alt="">
             <span>
               Medion
             </span>
@@ -22,26 +18,26 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Menu <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php"> About </a>
+                  <a class="nav-link" href="about.php"> Sobre nós </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="medicine.php"> Medicine </a>
+                  <a class="nav-link" href="medicine.php"> Promoções</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="buy.php"> Online Buy </a>
+                  <a class="nav-link" href="buy.php"> Produtos </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="news.php"> News </a>
+                  <a class="nav-link" href="news.php"> Novidades </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact us</a>
+                  <a class="nav-link" href="contact.php">Contato</a>
                 </li>
               </ul>
               <form class="form-inline ">
-                <input type="search" placeholder="Search">
+                <input type="search" placeholder="Pesquisar">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
               <div class="login_btn-contanier ml-0 ml-lg-5">

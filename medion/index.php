@@ -1,103 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Medion</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-
+<?php
+include_once '../includes/head.php';
+include_once '../includes/header.php';
+?>
 <body>
   <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-      </div>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="./index.php">
-            <img src="images/logo.png.png" alt="">
-            <span>
-              Medion
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Menu <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.php"> Sobre nós </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="medicine.php"> Promoções</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="buy.php"> Produtos </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.php"> Novidades </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contato</a>
-                </li>
-              </ul>
-              <form class="form-inline ">
-                <input type="search" placeholder="Pesquisar">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-              <div class="login_btn-contanier ml-0 ml-lg-5">
-                <a href="">
-                  <img src="images/user.png" alt="">
-                  <span>
-                    Login
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+   
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -633,53 +543,12 @@
 
     </div>
   </section>
-  <!-- end client section -->
+
+  <?php
+include_once '../includes/footer.php';
+?>
 
 
-  <footer class="footer-distributed">
-
-<div class="footer-left">
-
-    <h3>Mercado<span>Cultural</span></h3>
-
-    <p class="footer-links">
-        <a href="#">Home</a>
-        ·
-        <a href="#">Contact</a>
-    </p>
-
-    <p class="footer-company-name">Mercado Cultural &copy; 2022</p>
-</div>
-
-<div class="footer-center">
-
-    <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">mercadocultural@gmail.com
-        </a></p>
-    </div>
-
-</div>
-
-<div class="footer-right">
-
-    <p class="footer-company-about">
-        <span>Sobre a Empresa</span>
-        Mercado Cultural é uma loja de vendas de produtos culturais para cada país escolhido pelo cliente.
-    </p>
-
-    <div class="footer-icons">
-
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-
-    </div>
-
-</div>
-
-</footer>  
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
