@@ -6,6 +6,10 @@ include_once './includes/header.php';
 ?>
 <body>
   <div class="hero_area">
+<?php
+$result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
+?>
+
    
     <!-- slider section -->
     <section class=" slider_section position-relative">
@@ -19,34 +23,23 @@ include_once './includes/header.php';
           <div class="carousel-item active">
             <div class="container">
               <div class="row">
+                <?php
+                while($dados = mysqli_fetch_assoc($result))
+                {
+                  ?>
                 <div class="col-md-3">
                   <div class="img-box">
                     <a>
-                    <img src="images/bandalem.png.png" alt="bandeira_alemanha">
+                    <img src="images/<?php echo $dados['Bandeira'];?>" alt="bandeira_alemanha">
                   </a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandbrr.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandita.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandcana.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
+                  <?php
+                }
+
+                ?>
+
+                
                 <div class="col-md-8">
                   <div class="detail-box">
               
