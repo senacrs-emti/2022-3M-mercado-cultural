@@ -1,6 +1,13 @@
 <?php
+$servername = "localhost";
+$database = "mercadocultural";
+$username = "root";
+$password = "";
 
-$connect = mysql_connect('localhost','root','');
-$db = mysql_select_db('mercadocultural');
-
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
