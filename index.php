@@ -30,7 +30,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
                 <div class="col-md-3">
                   <div class="img-box">
                     <a>
-                    <img src="images/<?php echo $dados['Bandeira'];?>" alt="bandeira_alemanha">
+                    <img src="images/Band/<?php echo $dados['Bandeira'];?>" alt="<?php echo $dados['Nome'];?>">
                   </a>
                   </div>
                 </div>
@@ -59,28 +59,28 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
                   <div class="col-md-3">
                     <div class="img-box">
                       <a>
-                      <img src="images/band_chin.png.png" alt="bandeira_alemanha">
+                      <img src="images/Band/band_chin.png.png" alt="bandeira_alemanha">
                     </a>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="img-box">
                       <a>
-                      <img src="images/band_core.png.png" alt="bandeira_brasil">
+                      <img src="images/Band/band_core.png.png" alt="bandeira_brasil">
                     </a>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="img-box">
                       <a>
-                      <img src="images/band_eua.png.png" alt="bandeira_brasil">
+                      <img src="images/Band/band_eua.png.png" alt="bandeira_brasil">
                     </a>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="img-box">
                       <a>
-                      <img src="images/band_ing.png.png" alt="bandeira_brasil">
+                      <img src="images/Band/band_ing.png.png" alt="bandeira_brasil">
                     </a>
                     </div>
                   </div>
