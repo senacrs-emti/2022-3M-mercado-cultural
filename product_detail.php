@@ -32,17 +32,20 @@ include_once './includes/header.php';
 
     <style>
         .container2 {
-        width: 100vw;
-        height: 70vh;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        position: static;
+        border: 10px;
         }
 
         .img-product{
             display: flex;
             flex-direction: row;
+            align-items: left;
         }
  
 
