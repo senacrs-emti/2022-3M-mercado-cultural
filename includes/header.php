@@ -1,5 +1,5 @@
 <header class="header_section">
-      <div class="container">
+<div class="container">
       </div>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
