@@ -19,150 +19,61 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <?php
-                while($dados = mysqli_fetch_assoc($result))
-                {
-                  ?>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/Band/<?php echo $dados['Bandeira'];?>" alt="<?php echo $dados['Nome'];?>">
-                  </a>
-                  </div>
-                </div>
-                  <?php
-                }
-
-                ?>
-
-                
-                <div class="col-md-8">
-                  <div class="detail-box">
-              
-                    <div>
-                      <a href="">
-                        Comprar agora
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                  <div class="col-md-3">
-                    <div class="img-box">
-                      <a>
-                      <img src="images/Band/band_chin.png.png" alt="bandeira_alemanha">
-                    </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="img-box">
-                      <a>
-                      <img src="images/Band/band_core.png.png" alt="bandeira_brasil">
-                    </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="img-box">
-                      <a>
-                      <img src="images/Band/band_eua.png.png" alt="bandeira_brasil">
-                    </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="img-box">
-                      <a>
-                      <img src="images/Band/band_ing.png.png" alt="bandeira_brasil">
-                    </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="detail-box">
-                    <div>
-                      <a href="buy.php">
-                        ver mais
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandalem.png.png" alt="bandeira_alemanha">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandbrr.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandita.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="img-box">
-                    <a>
-                    <img src="images/bandcana.png.png" alt="bandeira_brasil">
-                  </a>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="detail-box">
-                    <h1>
-                      Welcome To Our <br>
-                      <span>
-                        Online Medicine
-                      </span>
-
-                    </h1>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                      alteration in some form, by injected humour, or randomised words which don't look even slightly
-                      believable.
-                    </p>
-                    <div>
-                      <a href="">
-                       Comprar agora
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="sr-only">Next</span>
         </a>
+
+        <div class="carousel-inner">
+                <?php
+                $contador = 1;
+                $linha = 1;
+                $situacao = "active";
+                while($dados = mysqli_fetch_assoc($result)){
+                // valida a opcao co item
+                if( $contador == 1 ){
+                  
+                  if( $linha > 1 ){
+                    $situacao = "";
+                  }
+
+                ?>
+                <div class="carousel-item <?php echo $situacao;?>">
+                  <div class="container">
+                    <div class="row">
+                <?php
+                }
+                  ?>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <a href="produtos-lista.php?pais=<?php echo $dados['PaisID']?>">
+                    <img src="images/Band/<?php echo $dados['Bandeira'];?>" alt="<?php echo $dados['Nome'];?>">
+                  </a>
+                  </div>
+                </div>
+                  <?php
+                  // soma o contador
+                  $contador++;
+                  // faz o reset do valor
+                  if( $contador > 4 ){
+                    $contador = 1;
+                    $linha++;
+                    ?>
+                        </div>
+                      </div>
+                    </div>
+                  <?php
+                  }
+                  // escreve o contador
+                }
+                ?>
+        </div>
+
       </div>
 
-
+    
     </section>
     <!-- end slider section -->
   </div>
