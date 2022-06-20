@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Jun-2022 às 14:36
+-- Tempo de geração: 20-Jun-2022 às 15:38
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -28,10 +28,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `clientes` (
-  `CLI_ID` int(11) NOT NULL,
-  `CLI_NOME` varchar(50) DEFAULT NULL,
-  `CLI_DATANASC` date DEFAULT NULL,
   `PEDIDOS_PED_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `empresa`
+--
+
+CREATE TABLE `empresa` (
+  `empresaID` int(11) NOT NULL,
+  `nome` varchar(45) NOT NULL,
+  `CNPJ` varchar(20) NOT NULL,
+  `estado` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `senha` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -139,10 +151,10 @@ CREATE TABLE `vendedores` (
 --
 
 --
--- Índices para tabela `clientes`
+-- Índices para tabela `empresa`
 --
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`CLI_ID`);
+ALTER TABLE `empresa`
+  ADD PRIMARY KEY (`empresaID`);
 
 --
 -- Índices para tabela `itens_pedidos`
@@ -177,6 +189,12 @@ ALTER TABLE `vendedores`
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `empresa`
+--
+ALTER TABLE `empresa`
+  MODIFY `empresaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `paises`
