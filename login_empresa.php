@@ -1,33 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <title>Document</title>
-</head>
-<body>
-    <fieldset class="grupo">
-        <div class="campo">
-            <form method="POST" action="login.php">
-            <label >Login:</label><input type="text" name="login" id="login" required><br>
-            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+<?php
+// includes basicos
+include_once './includes/conexao.php';
+include_once './includes/head.php';
+include_once './includes/header.php';
+?>
 
-            </form>
 
-            <div class="botoes">
-                <div class="botao_d">
-                    <button class="botao_d" type="submit"><a href="cadastro_empresa.php">Cadastre-se</a></button>
-                </div>
-
-                <div class="botao_e">
-                    <button class="botao_e" type="submit">Entrar</button>
-                </div>
-
-            </div>
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="custom_heading-container ">
+          <h2>
+           Login
+          </h2>
         </div>
-    </fieldset>
+      </div>
+    </div>
+    <div class="container layout_padding2">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form_contaier">
+         
+          
+          <form action="cadastro_empresa.php" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email </label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+        
+              <div class="form-group">
+                 <label for="exampleInputPassword1">Senha</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1">
+             </div>
 
-</body>
-</html>
+            <div id="entrar">
+              <button type="submit" class="">Entrar</button>
+            </div>
+
+            <div id="cadastro">
+              <button class=""><a href="cadastro_empresa.php">Cadastra-se</button>
+</div>
+            </form>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+ 
+
+  <!-- footer section -->
+ <?php 
+ include_once './includes/footer.php';
+ ?>

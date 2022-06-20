@@ -1,36 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <script language="JavaScript" type="text/javascript" src="cidades-estados-1.4-utf8.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <fieldset class="grupo">
-        <div class="campo">
-            <form method="POST" action="cadastro.php">
-            <label>Nome da Empresa:</label><input type="text" name="empresa" id="login" required><br>
-            <label>CNPJ:</label><input type="text" name="cnpj" id="cnpj" required><br>
-            
-        </div>
-    </fieldset>
+<?php
+// includes basicos
+include_once './includes/conexao.php';
+include_once './includes/head.php';
+include_once './includes/header.php';
+?>
 
-    <fieldset class="grupo">
-        <div class="campo">
-            <label>CEP:</label><input type="number" name="cep" id="cep" required><br>
-            <label>Endereco:</label><input type="text" name="endereco" id="endereco"><br>
-            <label>Bairro:</label><input type="text" name="bairro" id="bairro"><br>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="custom_heading-container ">
+          <h2>
+            Cadastro
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="container layout_padding2">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form_contaier">
+
+           <form action="cadastro_empresa.php" method="POST">
+              <div class="form-group">
+                <label for="exampleInputName1">Nome da empresa</label>
+                <input type="text" class="form-control" id="exampleInputName1" name="nome" id="nome">
+
+
+              </div>
+              
+        
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email </label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputName1">CNPJ</label>
+                <input type="text" class="form-control" id="exampleInputName1">
+              </div>
+              
+
+
+
+              <div class="form-group ">
+                <label for="inputState">Selecione o estado</label>
+                <select id="estado" name="estado">
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    <option value="EX">Estrangeiro</option>
+</select>
+              </div>
+
+              
+              <div class="form-group">
+                 <label for="exampleInputPassword1">Senha</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1">
+             </div>
+
+             
+             <div class="form-group">
+                 <label for="exampleInputPassword1">Confirme a sua senha</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1">
+             </div>
+             
+              <button type="submit" name="submit"  class="">Finalizar</button>
+            </form>
+          </div>
+        </div>
        
-            <label>Estado:</label><input type="text" name="estado" id="estado"><br>
-            <label>Município:</label><input type="text" name="municipio" id="municipio"><br>
+      </div>
+    </div>
+  </section>
 
-        </div>
+  <!-- end contact section -->
 
-    </fieldset>
+ 
 
-    <button class="botao" type="submit"><a href= "login_empresa.html">Cadastra-se</a></button>
-</body>
-</html>
+  <!-- footer section -->
+ <?php 
+ include_once './includes/footer.php';
+ ?>
+
+    
