@@ -45,7 +45,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               
                     <div>
                       <a href="">
-                        Buy Now
+                        Comprar agora
                       </a>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
                 <div class="col-md-8">
                   <div class="detail-box">
                     <div>
-                      <a href="buy.html">
+                      <a href="buy.php">
                         ver mais
                       </a>
                     </div>
@@ -144,7 +144,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
                     </p>
                     <div>
                       <a href="">
-                        Buy Now
+                       Comprar agora
                       </a>
                     </div>
                   </div>
@@ -227,10 +227,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
           </div>
           <div class="detail-box">
             <h5>
-              Fast Delivery
+             Entrega rápida
             </h5>
             <p>
-              It is a long established fact that a reader will be distracted by
+              Entrega rápida
             </p>
           </div>
         </div>
@@ -260,10 +260,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
           </div>
           <div class="detail-box">
             <h5>
-              license of government
+               licença governamental
             </h5>
             <p>
-              It is a long established fact that a reader will be distracted by
+               Este estabelecimento possui licença governamental
             </p>
           </div>
         </div>
@@ -352,10 +352,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
           </div>
           <div class="detail-box">
             <h5>
-              support24/7
+              Suporte 24/7
             </h5>
             <p>
-              It is a long established fact that a reader will be distracted by
+              Este estabelecimento possui suporte ao cliente 24/7
             </p>
           </div>
         </div>
@@ -433,30 +433,32 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 
   <!-- end about section -->
 
-  <!-- client section -->
-  <section class="client_section layout_padding">
+ 
+
+<?php
+include_once './includes/head.php';
+?>
+
+ <!-- client section -->
+ <section class="client_section layout_padding">
     <div class="container">
       <div class="custom_heading-container ">
         <h2>
-          O que nossos clientes falam
+          Desenvolvedores
         </h2>
       </div>
       <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="2" ></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="3"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="4"></li>
         </ol>
+        
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="client_container layout_padding2">
-              <div class="client_detail">
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in
-                  some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-              </div>
               <div class="client_box ">
                 <div class="img-box">
                   <img src="images/client.png " alt="">
@@ -475,15 +477,9 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
             <div class="client_container layout_padding2">
-              <div class="client_detail">
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in
-                  some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-              </div>
               <div class="client_box ">
                 <div class="img-box">
                   <img src="images/client.png " alt="">
@@ -502,15 +498,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               </div>
             </div>
           </div>
+
+
           <div class="carousel-item">
             <div class="client_container layout_padding2">
-              <div class="client_detail">
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in
-                  some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-              </div>
               <div class="client_box ">
                 <div class="img-box">
                   <img src="images/client.png " alt="">
@@ -529,8 +520,55 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_box ">
+                <div class="img-box">
+                  <img src="images/client.png " alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                    Randomised
+                  </h5>
+                  <h6>
+                    <span>
+                      Client
+                    </span>
+                    <img src="images/quote.png" alt="">
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_box ">
+                <div class="img-box">
+                  <img src="images/client.png " alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                    Randomised
+                  </h5>
+                  <h6>
+                    <span>
+                      Client
+                    </span>
+                    <img src="images/quote.png" alt="">
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+  </section>
 
 
     </div>
