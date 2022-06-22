@@ -24,7 +24,7 @@
                   <a class="nav-link" href="about.php"> Empresa </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="medicine.php"> Promoções</a>
+                  <a class="nav-link" href="promocao.php"> Promoções</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="buy.php"> Produtos </a>
