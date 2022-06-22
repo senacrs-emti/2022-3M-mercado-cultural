@@ -959,3 +959,8 @@ a:focus {
 .product{
   align-items: center;
 }
+
+/* centralização texto após login */
+.txt-sistema{
+  text-align: center;
+}

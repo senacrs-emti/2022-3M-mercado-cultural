@@ -13,6 +13,8 @@ if (isset($_POST['submit'])) {
 
 $result = mysqli_query($conn, "INSERT INTO empresa(nome,email,cnpj,estado,senha) 
 VALUES ('$nome','$email','$cnpj','$estado','$senha')");
+
+header('Location: login_empresa.php');
 }
 ?>
 
@@ -31,7 +33,7 @@ VALUES ('$nome','$email','$cnpj','$estado','$senha')");
     <div class="container layout_padding2">
       <div class="row">
         <div class="col-md-5">
-          <div class="form_contaier">
+          <div class="form_container">
 
            <form action="cadastro_empresa.php" method="POST">
               <div class="form-group">

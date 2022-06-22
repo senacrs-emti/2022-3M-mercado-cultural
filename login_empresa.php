@@ -23,19 +23,19 @@ include_once './includes/header.php';
           <div class="form_contaier">
          
           
-          <form action="cadastro_empresa.php" method="POST">
+          <form action="TestLogin.php" method="POST">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="e-mail">
               </div>
         
               <div class="form-group">
                  <label for="exampleInputPassword1">Senha</label>
-                   <input type="password" class="form-control" id="exampleInputPassword1">
+                   <input type="password" name="senha" class="form-control" id="exampleInputPassword1" placeholder="senha">
              </div>
 
             <div id="entrar">
-              <button type="submit" class="">Entrar</button>
+              <button type="submit" name="submit" class="">Entrar</button>
             </div>
 
             <div id="cadastro">
