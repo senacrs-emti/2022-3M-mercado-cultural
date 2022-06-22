@@ -11,7 +11,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 ?>
 
    
-    <!-- slider section -->
+    <!-- carrossel -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -75,9 +75,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 
     
     </section>
-    <!-- end slider section -->
+    <!-- fim do carrossel -->
   </div>
 
+   <!-- icones -->
   <section class="feature_section  layout_padding">
     <div class="container">
       <div class="feature_container">
@@ -274,9 +275,9 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
     </div>
   </section>
 
-  <!-- end feature section -->
+  <!-- fim dos icones-->
 
-  <!-- discount section -->
+  <!-- banner pag principal-->
 
   <section class="discount_section">
     <div class="container-fluid">
@@ -302,17 +303,13 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-md-5">
-          <div class="img-box">
-            <img src="images/medicines.jpg" alt="">
-          </div>
-        </div>
+    
       </div>
     </div>
   </section>
 
 
-  <!-- end discount section -->
+  <!-- banner pag principal -->
 
 
   <!-- about section -->
