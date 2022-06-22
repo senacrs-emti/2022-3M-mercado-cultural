@@ -372,11 +372,11 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/bi.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/BiancaFiRodrigues"> Bianca </a>
                   </h5>
                   <h6>
                     <span>
@@ -393,7 +393,7 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/vih.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
@@ -415,7 +415,7 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/riann.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
@@ -437,11 +437,11 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/feh.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/fehborba" > Maria Borba </a>
                   </h5>
                   <h6>
                     <span>
@@ -460,11 +460,11 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/maria.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                  <a href="https://github.com/maritavares28"> Maria Tavares </a>
                   </h5>
                   <h6>
                     <span>
