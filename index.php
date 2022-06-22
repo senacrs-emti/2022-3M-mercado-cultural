@@ -325,7 +325,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
       </div>
 
       <div class="img-box">
-        <img src="images/about-medicine.png" alt="">
+        <img src="images/logo.png.png" alt="">
       </div>
       <div class="detail-box">
         <p>
@@ -334,7 +334,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
          podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
         </p>
         <div class="d-flex justify-content-center">
-          <a href="">
+          <a href="about.php">
            Ler mais
           </a>
         </div>
