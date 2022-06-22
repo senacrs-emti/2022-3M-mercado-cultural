@@ -18,8 +18,9 @@ include_once './includes/header.php';
                 <div class="detail-prod">
                     <div class="detail">
                         <h3><?php echo "Mixed fruit drops"?></h3>
-                        <?php echo "Balas de Mix de Frutas"?>
-                        <?php echo "aa"?>
+                        <hp><?php echo "Balas de Mix de Frutas"?></hp>
+                        <h6><?php echo "R$"."30".",00"?></h6>
+                        <h6><?php echo "País: "."Alemanha"?></h6>
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
@@ -68,6 +69,11 @@ include_once './includes/header.php';
             padding: 0.2em 0.6em;
             position:relative;
             display:inline;
+        }
+
+        h6{
+            color: #696969;
+            
         }
  
 
