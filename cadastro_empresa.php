@@ -54,12 +54,16 @@ header('Location: login_empresa.php');
                 <input type="text" name="cnpj" id="cnpj" class="form-control" id="exampleInputName1">
               </div>
               
-
+   
+             
+              
 
 
               <div class="form-group ">
                 <label for="inputState">Selecione o estado</label>
-                <select id="estado" name="estado">
+               <div id="estados">
+<label for="estados">
+     <select id="estado" name="estado">
     <option value="AC">Acre</option>
     <option value="AL">Alagoas</option>
     <option value="AP">Amapá</option>
@@ -90,8 +94,26 @@ header('Location: login_empresa.php');
     <option value="EX">Estrangeiro</option>
 </select>
               </div>
+              </div>
+              </label>
+              <div class="form-group">
+    <label for="inputAddress">Cidade</label>
+    <input type="text" class="form-control" id="cidade">
+  </div>      
+        
+      
+              <div class="form-group">
+    <label for="inputAddress">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress" >
+  </div>
+  
+  <div class="form-group">
+    <label for="inputAddress2">Bairro</label>
+    <input type="text" class="form-control" id="inputAddress2">
+  </div>
 
-              
+
+
               <div class="form-group">
                  <label for="exampleInputPassword1">Senha</label>
                    <input type="password" class="form-control" name="senha" id="senha">

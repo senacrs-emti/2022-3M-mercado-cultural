@@ -960,7 +960,14 @@ a:focus {
   align-items: center;
 }
 
+<<<<<<< HEAD
 /* centralização texto após login */
 .txt-sistema{
   text-align: center;
+=======
+#banner-1 img{
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+>>>>>>> 3630a01066cdba98847f2800cda8e026b0cf5625
 }

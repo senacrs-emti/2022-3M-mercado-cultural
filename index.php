@@ -11,7 +11,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 ?>
 
    
-    <!-- slider section -->
+    <!-- carrossel -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -75,9 +75,10 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 
     
     </section>
-    <!-- end slider section -->
+    <!-- fim do carrossel -->
   </div>
 
+   <!-- icones -->
   <section class="feature_section  layout_padding">
     <div class="container">
       <div class="feature_container">
@@ -274,9 +275,9 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
     </div>
   </section>
 
-  <!-- end feature section -->
+  <!-- fim dos icones-->
 
-  <!-- discount section -->
+  <!-- banner pag principal-->
 
   <section class="discount_section">
     <div class="container-fluid">
@@ -296,23 +297,19 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               produtos do mundo inteiro em sua mão
             </p>
             <div>
-              <a href="">
+              <a href="/buy.php">
                 compre agora
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-md-5">
-          <div class="img-box">
-            <img src="images/medicines.jpg" alt="">
-          </div>
-        </div>
+    
       </div>
     </div>
   </section>
 
 
-  <!-- end discount section -->
+  <!-- banner pag principal -->
 
 
   <!-- about section -->
@@ -325,7 +322,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
       </div>
 
       <div class="img-box">
-        <img src="images/about-medicine.png" alt="">
+        <img src="images/logo.png.png" alt="">
       </div>
       <div class="detail-box">
         <p>
@@ -334,7 +331,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
          podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
         </p>
         <div class="d-flex justify-content-center">
-          <a href="">
+          <a href="about.php">
            Ler mais
           </a>
         </div>
@@ -372,16 +369,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/bi.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/BiancaFiRodrigues"> Bianca Rodrigues </a>
                   </h5>
                   <h6>
-                    <span>
-                      client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -393,38 +387,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/vih.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                  <a href="https://github.com/vihh04"> Vitória Helena </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
-                    <img src="images/quote.png" alt="">
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="carousel-item">
-            <div class="client_container layout_padding2">
-              <div class="client_box ">
-                <div class="img-box">
-                  <img src="images/client.png " alt="">
-                </div>
-                <div class="name">
-                  <h5>
-                    Randomised
-                  </h5>
-                  <h6>
-                    <span>
-                      Client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -437,16 +406,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/riann.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                  <a href="https://github.com/riannrodrigues" > Riann Rodrigues </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -454,22 +420,36 @@ include_once './includes/head.php';
             </div>
           </div>
 
-          
 
           <div class="carousel-item">
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/feh.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/fehborba" > Maria Borba </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
+                    <img src="images/quote.png" alt="">
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_box ">
+                <div class="img-box">
+                  <img src="images/maria.png.png " alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                  <a href="https://github.com/maritavares28"> Maria Tavares </a>
+                  </h5>
+                  <h6>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
