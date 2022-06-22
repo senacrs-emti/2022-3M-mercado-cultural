@@ -17,8 +17,8 @@ include_once './includes/header.php';
 
                 <div class="detail-prod">
                     <div class="detail">
-                        <h3><?php echo "Nome do produto"?></h3>
-                        <?php echo "Mix de Frutas"?>
+                        <h3><?php echo "Mixed fruit drops"?></h3>
+                        <?php echo "Balas de Mix de Frutas"?>
                     </div>
 
                     <div class="btn_container">
@@ -36,12 +36,12 @@ include_once './includes/header.php';
         .container2 {
         width: 100%;
         height: 100%;
-        display: inline-block;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         position: static;
-        border: 10px;
+        border: 0;
         }
 
         .product{
@@ -49,8 +49,12 @@ include_once './includes/header.php';
         }
 
         .img-product{
-            display: inline-block;
+            height: 50%;
             float: left;
+        }
+
+        .detail-prod{
+            height: 50%;
         }
  
 
@@ -84,3 +88,7 @@ include_once './includes/header.php';
 
 
 </body>
+
+<?php
+include_once './includes/footer.php';
+?>
