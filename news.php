@@ -19,9 +19,9 @@ include_once './includes/header.php';
       </div>
       <div class="detail-box">
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it
+        O mercado cultural tem como objetivo, levar a cultura e as características de cada país pelo mundo. 
+        Através do nosso site, você tem acesso 
+        exclusivo a produtos que estão muitas vezes do outro lado do mundo, com uma baixa taxa de transporte.
         </p>
         <div class="d-flex justify-content-center">
           <a href="">
@@ -242,16 +242,16 @@ include_once './includes/header.php';
           <div class="col-lg-3 col-md-5 offset-md-2">
             <div class="detail-box">
               <h2>
-                You get <br>
-                any medicine <br>
-                on
+                compre agora <br>
+                produtos variados <br>
+                
                 <span>
-                  10% discount
+                  10% desconto
                 </span>
 
               </h2>
               <p>
-                It is a long established fact that a reader will be distracted by
+               produtos de todo o mundo em sua mão
               </p>
               <div>
                 <a href="">
