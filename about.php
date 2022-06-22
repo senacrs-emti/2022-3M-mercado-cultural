@@ -21,9 +21,9 @@ include_once './includes/header.php';
       </div>
       <div class="detail-box">
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it
+        Nossa empresa é formada por 5 pessoas, todas com o mesmo objetivo: levar o conhecimento de diferentes
+       culturas a todos. Nós, como equipe, prezamos o cuidado com o meio ambiente. Sabemos que através dessa diversidade de produtos, culturas e países,
+         podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
         </p>
        
       </div>

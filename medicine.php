@@ -14,16 +14,16 @@ include_once './includes/header.php';
           <div class="col-lg-3 col-md-5 offset-md-2">
             <div class="detail-box">
               <h2>
-                You get <br>
-                any medicine <br>
-                on
+                compre agora <br>
+                produtos variados <br>
+                
                 <span>
-                  10% discount
+                  10% desconto
                 </span>
 
               </h2>
               <p>
-                It is a long established fact that a reader will be distracted by
+              produtos de todo o mundo em sua mão 
               </p>
               <div>
                 <a href="">
@@ -51,7 +51,7 @@ include_once './includes/header.php';
   <section class="health_section layout_padding">
     <div class="health_carousel-container">
       <h2 class="text-uppercase">
-        Vitamins & Supplements
+        produtos 
 
 
       </h2>
@@ -73,7 +73,8 @@ include_once './includes/header.php';
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+              
 
                 </div>
                 <div class="text">
@@ -106,7 +107,42 @@ include_once './includes/header.php';
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+              
+             
+                </div>
+                <div class="text">
+                  <h6>
+                    Medicine
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      $
+                    </span>
+                    30
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-6.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+              
 
                 </div>
                 <div class="text">
@@ -139,40 +175,8 @@ include_once './includes/header.php';
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Medicine
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
                   <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+              
 
                 </div>
                 <div class="text">
