@@ -6,7 +6,7 @@
           <a class="navbar-brand" href="./index.php">
             <img src="images/logo.png.png" alt="">
             <span>
-              Medion
+              MCultural
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -24,7 +24,7 @@
                   <a class="nav-link" href="about.php"> Empresa </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="medicine.php"> Promoções</a>
+                  <a class="nav-link" href="promocao.php"> Promoções</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="buy.php"> Produtos </a>

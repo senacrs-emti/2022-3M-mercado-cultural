@@ -7,41 +7,12 @@ include_once './includes/header.php';
 
 
   <!-- discount section -->
-  <div class="layout_padding-top">
-    <section class="discount_section ">
-      <div class="container-fluid ">
-        <div class="row ">
-          <div class="col-lg-3 col-md-5 offset-md-2">
-            <div class="detail-box">
-              <h2>
-                compre agora <br>
-                produtos variados <br>
-                
-                <span>
-                  10% desconto
-                </span>
-
-              </h2>
-              <p>
-              produtos de todo o mundo em sua mão 
-              </p>
-              <div>
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
+ 
+         
+            <div id="banner-1">
+              <img src="images/banner-1.png" alt="">
             </div>
-          </div>
-          <div class="col-lg-7 col-md-5">
-            <div class="img-box">
-              <img src="images/medicines.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
+        
 
 
   <!-- end discount section -->

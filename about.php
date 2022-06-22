@@ -17,7 +17,7 @@ include_once './includes/header.php';
       </div>
 
       <div class="img-box">
-        <img src="images/about-medicine.png" alt="">
+        <img src="images/logo.png.png" alt="">
       </div>
       <div class="detail-box">
         <p>

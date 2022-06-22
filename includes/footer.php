@@ -10,9 +10,9 @@ mysqli_close($conn);
     <h3>Mercado<span>Cultural</span></h3>
 
     <p class="footer-links">
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         ·
-        <a href="#">Contact</a>
+        <a href="contact.php">Contato</a>
     </p>
 
     <p class="footer-company-name">Mercado Cultural &copy; 2022</p>
