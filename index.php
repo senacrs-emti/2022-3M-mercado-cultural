@@ -297,7 +297,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               produtos do mundo inteiro em sua mão
             </p>
             <div>
-              <a href="">
+              <a href="/buy.php">
                 compre agora
               </a>
             </div>
