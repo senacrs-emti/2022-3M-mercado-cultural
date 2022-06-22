@@ -284,20 +284,20 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
         <div class="col-lg-3 col-md-5 offset-md-2">
           <div class="detail-box">
             <h2>
-              You get <br>
-              any medicine <br>
-              on
+              compre conosco <br>
+              agora <br>
+              
               <span>
-                10% discount
+                10% desconto
               </span>
 
             </h2>
             <p>
-              It is a long established fact that a reader will be distracted by
+              produtos do mundo inteiro em sua mão
             </p>
             <div>
               <a href="">
-                Buy Now
+                compre agora
               </a>
             </div>
           </div>
@@ -329,9 +329,9 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
       </div>
       <div class="detail-box">
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it
+        Nossa empresa é formada por 5 pessoas, todas com o mesmo objetivo: levar o conhecimento de diferentes 
+        culturas a todos. Nós, como equipe, prezamos o cuidado com o meio ambiente. Sabemos que através dessa diversidade de produtos, culturas e países,
+         podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
         </p>
         <div class="d-flex justify-content-center">
           <a href="">
@@ -380,7 +380,7 @@ include_once './includes/head.php';
                   </h5>
                   <h6>
                     <span>
-                      Client
+                      client
                     </span>
                     <img src="images/quote.png" alt="">
                   </h6>

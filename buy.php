@@ -14,7 +14,7 @@ include_once './includes/header.php';
   <section class="health_section layout_padding">
     <div class="health_carousel-container">
       <h2 class="text-uppercase">
-        Medicine & Health
+        produtos variados 
 
       </h2>
       <div class="carousel-wrap layout_padding2">
@@ -280,7 +280,7 @@ include_once './includes/header.php';
     </div>
     <div class="health_carousel-container">
       <h2 class="text-uppercase">
-        Vitamins & Supplements
+        promoção de produtos
 
 
       </h2>
