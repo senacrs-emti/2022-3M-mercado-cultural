@@ -369,16 +369,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/bi.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/BiancaFiRodrigues"> Bianca Rodrigues </a>
                   </h5>
                   <h6>
-                    <span>
-                      client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -390,38 +387,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/vih.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                  <a href="https://github.com/vihh04"> Vitória Helena </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
-                    <img src="images/quote.png" alt="">
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="carousel-item">
-            <div class="client_container layout_padding2">
-              <div class="client_box ">
-                <div class="img-box">
-                  <img src="images/client.png " alt="">
-                </div>
-                <div class="name">
-                  <h5>
-                    Randomised
-                  </h5>
-                  <h6>
-                    <span>
-                      Client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -434,16 +406,13 @@ include_once './includes/head.php';
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/riann.png.png " alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                  <a href="https://github.com/riannrodrigues" > Riann Rodrigues </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
@@ -451,22 +420,36 @@ include_once './includes/head.php';
             </div>
           </div>
 
-          
 
           <div class="carousel-item">
             <div class="client_container layout_padding2">
               <div class="client_box ">
                 <div class="img-box">
-                  <img src="images/client.png " alt="">
+                  <img src="images/feh.png.png" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Randomised
+                    <a href="https://github.com/fehborba" > Maria Borba </a>
                   </h5>
                   <h6>
-                    <span>
-                      Client
-                    </span>
+                    <img src="images/quote.png" alt="">
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_box ">
+                <div class="img-box">
+                  <img src="images/maria.png.png " alt="">
+                </div>
+                <div class="name">
+                  <h5>
+                  <a href="https://github.com/maritavares28"> Maria Tavares </a>
+                  </h5>
+                  <h6>
                     <img src="images/quote.png" alt="">
                   </h6>
                 </div>
