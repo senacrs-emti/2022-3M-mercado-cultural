@@ -36,10 +36,22 @@
                   <a class="nav-link" href="contact.php">Contato</a>
                 </li>
               </ul>
-              <form class="form-inline ">
-                <input type="search" placeholder="Pesquisar">
+
+              <form class="form-inline" method="POST" action="conexao.php">
+                <input type="text" name="pesquisar" placeholder="PESQUISAR">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
+              <!-- <form class="form-inline ">
+                <input type="search" placeholder="Pesquisar">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form> -->
+
+            <!--<h1>Pesquisar Cursos</h1>
+<form method="POST" action="pesquisar.php">
+    Pesquisar:<input type="text" name="pesquisar" placeholder="PESQUISAR">
+    <input type="submit" value="ENVIAR">
+</form> -->
+
               <div class="login_btn-contanier ml-0 ml-lg-5">
                 <a href="login_empresa.php">
                   <img src="images/user.png" alt="">
