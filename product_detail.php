@@ -19,7 +19,7 @@ include_once './includes/header.php';
                     <div class="detail">
                         <h3><?php echo "Mixed fruit drops"?></h3>
                         <?php echo "Balas de Mix de Frutas"?>
-                        <?php echo ?>
+                        <?php echo "aa"?>
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
