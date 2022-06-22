@@ -24,7 +24,7 @@ include_once './includes/header.php';
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
-                        <a href="">Comprar agora</a>
+                        <a href="#">Comprar agora</a>
                         
                     </div>
 
