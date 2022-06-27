@@ -1,21 +1,26 @@
 <?php
 // includes basicos
-include_once './includes/conexao.php';
-include_once './includes/head.php';
-include_once './includes/header.php';
+include_once './includes/conexao.php';;
 
 if (isset($_POST['submit'])) {
   $nome = $_POST['nome'];
   $email = $_POST['email'];
   $cnpj = $_POST['cnpj'];
   $estado = $_POST['estado'];
+  $cidade = $_POST['cidade'];
+  $endereco = $_POST['endereco'];
+  $bairro = $_POST['bairro'];
   $senha = $_POST['senha'];
 
-$result = mysqli_query($conn, "INSERT INTO empresa(nome,email,cnpj,estado,senha) 
-VALUES ('$nome','$email','$cnpj','$estado','$senha')");
-
-header('Location: login_empresa.php');
+  $sqlConsulta = "INSERT INTO empresa(nome,email,cnpj,estado,cidade,endereco,bairro,senha) 
+  VALUES ('$nome','$email','$cnpj','$estado','$cidade','$endereco','$bairro','$senha')";
+  $result = mysqli_query($conn, $sqlConsulta);
+  header("location: login_empresa.php");
 }
+
+
+include_once './includes/head.php';
+include_once './includes/header.php'
 ?>
 
 
@@ -38,20 +43,20 @@ header('Location: login_empresa.php');
            <form action="cadastro_empresa.php" method="POST">
               <div class="form-group">
                 <label for="exampleInputName1">Nome da empresa</label>
-                <input type="text" class="form-control" id="exampleInputName1" name="nome" id="nome">
+                <input type="text" class="form-control" name="nome" id="nome">
 
 
               </div>
               
         
               <div class="form-group">
-                <label for="exampleInputEmail1">Email </label>
-                <input type="email" name="email" id="email" class="form-control" id="exampleInputEmail1">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
               </div>
 
               <div class="form-group">
                 <label for="exampleInputName1">CNPJ</label>
-                <input type="text" name="cnpj" id="cnpj" class="form-control" id="exampleInputName1">
+                <input type="text" name="cnpj" id="cnpj" class="form-control">
               </div>
               
    
@@ -98,18 +103,18 @@ header('Location: login_empresa.php');
               </label>
               <div class="form-group">
     <label for="inputAddress">Cidade</label>
-    <input type="text" class="form-control" id="cidade">
+    <input type="text" name="cidade" id="cidade" class="form-control">
   </div>      
         
       
               <div class="form-group">
     <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" >
+    <input type="text" name="endereco" id="endereco" class="form-control">
   </div>
   
   <div class="form-group">
     <label for="inputAddress2">Bairro</label>
-    <input type="text" class="form-control" id="inputAddress2">
+    <input type="text" name="bairro" id="bairro" class="form-control">
   </div>
 
 

@@ -3,6 +3,8 @@
 include_once './includes/conexao.php';
 include_once './includes/head.php';
 include_once './includes/header.php';
+
+
 ?>
 
 
@@ -22,24 +24,24 @@ include_once './includes/header.php';
         <div class="col-md-5">
           <div class="form_contaier">
 
-          <form action="cadastro_empresa.php" method="POST">
+          <form action="contact.php" method="POST">
               <div class="form-group">
                 <label for="exampleInputName1">Nome</label>
-                <input type="text" class="form-control" id="exampleInputName1">
+                <input type="text" class="form-control" name="nome" id="nome">
               </div>
               <div class="form-group">
                 <label for="exampleInputNumber1">Número de telefone</label>
-                <input type="text" class="form-control" id="exampleInputNumber1">
+                <input type="text" class="form-control" name="telefone" id="telefone">
               </div>
 
               <div class="form-group">
                 <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <input type="email" class="form-control" name="email" id="email">
               </div>
              
               <div class="form-group">
                 <label for="exampleInputMessage">Mensagem</label>
-                <input type="text" class="form-control" id="exampleInputMessage">
+                <input type="text" class="form-control" name="mensagem" id="mensagem">
               </div>
               <button type="submit" class="">Enviar</button>
             </form>
