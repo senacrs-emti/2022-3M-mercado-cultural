@@ -1,10 +1,19 @@
 <?php
 // includes basicos
 include_once './includes/conexao.php';
+
+if (isset($_POST['submit'])) {
+$nome = $_POST['nome'];
+$telefone = $_POST['telefone'];
+$email = $_POST['email'];
+$mensagem = $_POST['mensagem'];
+
+$result_msg_contato = "INSERT INTO contato(nome,telefone,email,mensagem,created) VALUES ('$nome', '$telefone', '$email', '$mensagem', NOW()";
+$resultado_msg_contato = mysqli_query($conn, $result_msg_contato);
+}
+
 include_once './includes/head.php';
 include_once './includes/header.php';
-
-
 ?>
 
 
@@ -26,24 +35,24 @@ include_once './includes/header.php';
 
           <form action="contact.php" method="POST">
               <div class="form-group">
-                <label for="exampleInputName1">Nome</label>
+                <label for="nome">Nome</label>
                 <input type="text" class="form-control" name="nome" id="nome">
               </div>
               <div class="form-group">
-                <label for="exampleInputNumber1">Número de telefone</label>
+                <label for="telefone">Número de telefone</label>
                 <input type="text" class="form-control" name="telefone" id="telefone">
               </div>
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Email </label>
+                <label for="email">Email </label>
                 <input type="email" class="form-control" name="email" id="email">
               </div>
              
               <div class="form-group">
-                <label for="exampleInputMessage">Mensagem</label>
+                <label for="mensagem">Mensagem</label>
                 <input type="text" class="form-control" name="mensagem" id="mensagem">
               </div>
-              <button type="submit" class="">Enviar</button>
+              <button name="submit" type="submit">Enviar</button>
             </form>
           </div>
         </div>
