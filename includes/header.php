@@ -18,7 +18,7 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Menu <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php"> Empresa </a>

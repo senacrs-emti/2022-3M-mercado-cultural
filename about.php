@@ -21,9 +21,9 @@ include_once './includes/header.php';
       </div>
       <div class="detail-box">
         <p>
-        Nossa empresa é formada por 5 pessoas, todas com o mesmo objetivo: levar o conhecimento de diferentes
-       culturas a todos. Nós, como equipe, prezamos o cuidado com o meio ambiente. Sabemos que através dessa diversidade de produtos, culturas e países,
-         podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
+        Nossa empresa é formada por 5 pessoas, todas com o mesmo objetivo: levar o conhecimento de diferentes 
+        culturas a todos. Prezamos pelas diferentes cultura e sabemos que através dessa diversidade de produtos dos países,
+         podemos levar um pouco das características de cada região do mundo.
         </p>
        
       </div>

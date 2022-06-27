@@ -21,7 +21,7 @@ include_once './includes/header.php';
         <p>
         O mercado cultural tem como objetivo, levar a cultura e as características de cada país pelo mundo. 
         Através do nosso site, você tem acesso 
-        exclusivo a produtos que estão muitas vezes do outro lado do mundo, com uma baixa taxa de transporte.
+        exclusivo a produtos que estão muitas vezes do outro lado do mundo.
         </p>
        
       </div>
@@ -60,13 +60,13 @@ include_once './includes/header.php';
             </div>
           </div>
           <div class="col-lg-7 col-md-5">
-            <div class="img-box">
-              <img src="images/medicines.jpg" alt="">
+          <div class="img-box" id="banner-2">
+              <img src="images/Prod/p_tai_2.png" alt="">
             </div>
           </div>
         </div>
-      </div>
-    </section>
+            </div>
+        </section>
 
     <!-- end discount section -->
   </div>
