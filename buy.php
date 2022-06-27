@@ -6,7 +6,9 @@ include_once './includes/header.php';
 ?>
 
 
+              
 
+    
 
 
   <!-- health section -->
@@ -15,413 +17,66 @@ include_once './includes/header.php';
     <div class="health_carousel-container">
       <h2 class="text-uppercase">
         produtos variados 
-
       </h2>
+
+
       <div class="carousel-wrap layout_padding2">
-        <div class="owl-carousel owl-1">
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
+
+      <?php
+                $sql = "SELECT * FROM produtos";
+                $result = mysqli_query($conn, $sql);
+                $contador = 1;
+                $linha = 1;
+                $situacao = "active";
+                while($dados = mysqli_fetch_assoc($result)){
+                // valida a opcao co item
+                if( $contador == 1 ){
+                  
+                  if( $linha > 1 ){
+                    $situacao = "";
+                  }
+                ?>
+
+        <div class="owl-carousel owl-1o">
+          <div class="item" <?php echo $situacao;?>>
+            <div class="box2">
+              <div class="bt2n_container">
+              <?php
+                }
+                  ?>
                     <div class="img-box">
-                      <img src="images/Prod/<?php echo "p_alm_1.png";?>" alt="">
+                      <a href="produtos-lista.php?pais=<?php echo $dados['produto_id']?>">
+                        <img src="images/Prod/<?php echo $dados['imagem'];?>" alt="<?php echo $dados['produto_nome'];?>">
+                      </a>
                     </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
 
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p_cand_2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p_cand_1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p_eua_2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p_eua_1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p_" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-4.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-5.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Health
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
+                    <?php
+                  // soma o contador
+                  $contador++;
+                  // faz o reset do valor
+                  if( $contador > 4 ){
+                    $contador = 1;
+                    $linha++;
+                  }
+                  // escreve o contador
+                }
+                ?>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="health_carousel-container">
-      <h2 class="text-uppercase">
-        promoção de produtos
 
 
-      </h2>
-      <div class="carousel-wrap layout_padding2">
-        <div class="owl-carousel owl-2">
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-6.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-        
 
-                </div>
-                <div class="text">
-                  <h6>
-                    Medicine
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-6.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-                <div class="text">
-                  <h6>
-                    Medicine
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-6.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
 
-                </div>
-                <div class="text">
-                  <h6>
-                    Medicine
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="btn_container">
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-              <div class="img-box">
-                <img src="images/Prod/p-6.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <div class="star_container">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
+
+
+
+          
+ 
+
     
-
-                </div>
-                <div class="text">
-                  <h6>
-                    Medicine
-                  </h6>
-                  <h6 class="price">
-                    <span>
-                      $
-                    </span>
-                    30
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   
   </section>
 
