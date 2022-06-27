@@ -37,7 +37,7 @@ include_once './includes/header.php';
                         <h3><?php echo "Mixed fruit drops"?></h3>
                         <hp><?php echo "Balas de Mix de Frutas"?></hp>
                         <h6><?php echo "R$"."30".",00"?></h6>
-                        <h6><?php echo "País: "."Alm"?></h6>
+                        <h6><?php echo "País: "."Alemanha"?></h6>
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
