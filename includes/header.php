@@ -18,7 +18,7 @@
             <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Menu <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php"> Empresa </a>
@@ -36,11 +36,12 @@
                   <a class="nav-link" href="contact.php">Contato</a>
                 </li>
               </ul>
-
-              <form class="form-inline" method="POST" action="conexao.php">
+              <form class="form-inline" method="GET" action="sistema_busca.php">
                 <input type="text" name="pesquisar" placeholder="PESQUISAR">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
+
+
               <!-- <form class="form-inline ">
                 <input type="search" placeholder="Pesquisar">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>

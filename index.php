@@ -298,7 +298,7 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
               produtos do mundo inteiro em sua mão
             </p>
             <div>
-              <a href="/buy.php">
+              <a href="buy.php">
                 compre agora
               </a>
             </div>
@@ -328,8 +328,8 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
       <div class="detail-box">
         <p>
         Nossa empresa é formada por 5 pessoas, todas com o mesmo objetivo: levar o conhecimento de diferentes 
-        culturas a todos. Nós, como equipe, prezamos o cuidado com o meio ambiente. Sabemos que através dessa diversidade de produtos, culturas e países,
-         podemos levar um pouco das características de cada região sem deteriorar o meio ambiente.
+        culturas a todos. Prezamos pelas diferentes culturas e sabemos que através dessa diversidade de produtos dos países,
+         podemos levar um pouco das características de cada região do mundo.
         </p>
         <div class="d-flex justify-content-center">
           <a href="about.php">
