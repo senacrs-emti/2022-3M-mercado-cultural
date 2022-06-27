@@ -36,11 +36,12 @@
                   <a class="nav-link" href="contact.php">Contato</a>
                 </li>
               </ul>
-
-              <form class="form-inline" method="POST" action="conexao.php">
+              <form class="form-inline" method="GET" action="sistema_busca.php">
                 <input type="text" name="pesquisar" placeholder="PESQUISAR">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
+
+
               <!-- <form class="form-inline ">
                 <input type="search" placeholder="Pesquisar">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
