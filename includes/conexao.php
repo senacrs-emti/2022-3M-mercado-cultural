@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "mercadocultural";
+$database = "mercadocultural2";
 $username = "root";
 $password = "";
 

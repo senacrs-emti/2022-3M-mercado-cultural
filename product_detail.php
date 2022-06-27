@@ -6,6 +6,23 @@ include_once './includes/header.php';
 ?>
 
 <body>
+
+    <?php
+    
+    $sql = 'SELECT * FROM vw_retorna_produto';
+    if ($res = mysqli_query ($con, $sql)) {
+        $nomeProduto = array();
+        $codigoProduto = array();
+        $i = 0;
+        while ($reg=mysqli_fetch_assoc($res)) {
+
+            $nomeProduto[$i] = $reg['Nome_Produto'];
+
+        }
+    }
+    
+    ?>
+
     <div class="container2">
         <div class="product">
             <div class="prod-detail">
