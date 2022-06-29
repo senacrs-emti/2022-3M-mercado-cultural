@@ -5,10 +5,24 @@ include_once './includes/head.php';
 include_once './includes/header.php';
 ?>
 <body>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://i0.statig.com.br/bancodeimagens/bx/ry/fv/bxryfvt3vi76x0obfhixvrj8x.jpg" alt="First slide">
+    </div>
+    
+  </div>
+</div>
   <div class="hero_area">
+
+
+  
 <?php
 $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 ?>
+
+
 
    
     <!-- carrossel -->
