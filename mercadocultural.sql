@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Jun-2022 às 15:38
+-- Tempo de geração: 29-Jun-2022 às 12:56
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -34,6 +34,20 @@ CREATE TABLE `clientes` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `contato`
+--
+
+CREATE TABLE `contato` (
+  `contatoID` int(11) NOT NULL,
+  `nome` varchar(150) NOT NULL,
+  `telefone` int(12) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `mensagem` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `empresa`
 --
 
@@ -42,6 +56,9 @@ CREATE TABLE `empresa` (
   `nome` varchar(45) NOT NULL,
   `CNPJ` varchar(20) NOT NULL,
   `estado` varchar(100) NOT NULL,
+  `cidade` varchar(150) NOT NULL,
+  `endereco` varchar(200) NOT NULL,
+  `bairro` varchar(150) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -87,7 +104,9 @@ INSERT INTO `paises` (`PaisID`, `Nome`, `Bandeira`) VALUES
 (7, 'Inglaterra', 'band_ing.png.png'),
 (8, 'Coreia do Sul', 'band_core.png.png'),
 (9, 'Japão', 'band_jap.png.png'),
-(10, 'Tailândia', 'band_tai.png.png');
+(10, 'Tailândia', 'band_tai.png.png'),
+(11, 'Filipinas', 'band_fil.png.png\r\n'),
+(12, 'França', 'bandafran.png.png\r\n');
 
 -- --------------------------------------------------------
 
@@ -151,6 +170,12 @@ CREATE TABLE `vendedores` (
 --
 
 --
+-- Índices para tabela `contato`
+--
+ALTER TABLE `contato`
+  ADD PRIMARY KEY (`contatoID`);
+
+--
 -- Índices para tabela `empresa`
 --
 ALTER TABLE `empresa`
@@ -191,16 +216,22 @@ ALTER TABLE `vendedores`
 --
 
 --
+-- AUTO_INCREMENT de tabela `contato`
+--
+ALTER TABLE `contato`
+  MODIFY `contatoID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `empresaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `empresaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `paises`
 --
 ALTER TABLE `paises`
-  MODIFY `PaisID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `PaisID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
