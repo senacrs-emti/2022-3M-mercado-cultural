@@ -29,8 +29,11 @@ include_once './includes/header.php';
                         <h6><?php echo $dados['produto_ID'];?></h6>
                         <h3><?php echo $dados['produto_nome'];?></h3>
                         
+                        <h5><?php echo $dados['descricao']?></h5>
+
                         <h6><?php echo 'R$ '.$dados['produto_valor'].',00';?></h6>
                         <h6><?php echo $dados['pais_ID'];?></h6>
+                        
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
@@ -84,6 +87,22 @@ include_once './includes/header.php';
         h6{
             color: #696969;
             
+        }
+        h5{
+
+            align-items: center;
+
+        }
+        .btn_container{
+            margin: 100px 0px 0px 0px;
+        }
+
+        .btn_container a{
+            margin: 0px 10px 0px 0px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: 10px;
         }
  
 
