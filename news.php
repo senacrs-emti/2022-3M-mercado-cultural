@@ -61,7 +61,7 @@ include_once './includes/header.php';
           </div>
           <div class="col-lg-7 col-md-5">
           <div class="img-box" id="banner-2">
-              <img src="images/Prod/p_tai_2.png" alt="">
+              <img src="images/bannerbf.png" alt="">
             </div>
           </div>
         </div>
