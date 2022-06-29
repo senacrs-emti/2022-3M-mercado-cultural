@@ -9,17 +9,9 @@ include_once './includes/header.php';
 
     <?php
     
-    $sql = 'SELECT * FROM vw_retorna_produto';
-    if ($res = mysqli_query ($con, $sql)) {
-        $nomeProduto = array();
-        $codigoProduto = array();
-        $i = 0;
-        while ($reg=mysqli_fetch_assoc($res)) {
-
-            $nomeProduto[$i] = $reg['Nome_Produto'];
-
-        }
-    }
+    $sql = 'SELECT * FROM produtos, paises';
+    $result = mysqli_query($conn, $sql);
+    $dados = mysqli_fetch_assoc($result);
     
     ?>
 
@@ -28,16 +20,17 @@ include_once './includes/header.php';
             <div class="prod-detail">
                 <div class="img-product">
                     <!-- foto do produto  -->
-                    <img src="images/Prod/<?php echo "p_alm_1.png";?>" alt="">
+                    <img src="images/Prod/<?php echo $dados['imagem'];?>" alt="">
 
                 </div>
                 <!-- detalhes escritos sobre o produto, como o nome, sobre o produto em si, preço, etc. etc.  -->
                 <div class="detail-prod">
                     <div class="detail">
-                        <h3><?php echo "Mixed fruit drops"?></h3>
+                        <?php echo $dados['produto_ID']?>
+                        <h3><?php echo $dados['produto_nome'];?></h3>
                         <hp><?php echo "Balas de Mix de Frutas"?></hp>
-                        <h6><?php echo "R$"."30".",00"?></h6>
-                        <h6><?php echo "País: "."Alemanha"?></h6>
+                        <h6><?php echo 'R$ '.$dados['produto_valor'].',00'?></h6>
+                        <h6><?php echo $dados['pais_ID'].$dados['Nome']?></h6>
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
