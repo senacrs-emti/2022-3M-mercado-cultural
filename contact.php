@@ -1,17 +1,6 @@
 <?php
 // includes basicos
 include_once './includes/conexao.php';
-
-if (isset($_POST['submit'])) {
-$nome = $_POST['nome'];
-$telefone = $_POST['telefone'];
-$email = $_POST['email'];
-$mensagem = $_POST['mensagem'];
-
-$result_msg_contato = "INSERT INTO contato(nome,telefone,email,mensagem,created) VALUES ('$nome', '$telefone', '$email', '$mensagem', NOW()";
-$resultado_msg_contato = mysqli_query($conn, $result_msg_contato);
-}
-
 include_once './includes/head.php';
 include_once './includes/header.php';
 ?>
@@ -33,26 +22,25 @@ include_once './includes/header.php';
         <div class="col-md-5">
           <div class="form_contaier">
 
-          <form action="contact.php" method="POST">
+          <form action="salvar_mensagem.php" method="POST">
               <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" name="nome" id="nome">
+                <input type="text" class="form-control" name="nome">
               </div>
               <div class="form-group">
                 <label for="telefone">Número de telefone</label>
-                <input type="text" class="form-control" name="telefone" id="telefone">
+                <input type="text" class="form-control" name="telefone">
               </div>
 
               <div class="form-group">
                 <label for="email">Email </label>
-                <input type="email" class="form-control" name="email" id="email">
+                <input type="email" class="form-control" name="email">
               </div>
              
               <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <input type="text" class="form-control" name="mensagem" id="mensagem">
+                <textarea for="mensagem" name="mensagem">Mensagem</textarea>
               </div>
-              <button name="submit" type="submit">Enviar</button>
+              <button type="submit" name="submit">Enviar</button>
             </form>
           </div>
         </div>

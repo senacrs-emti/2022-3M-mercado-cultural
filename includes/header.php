@@ -4,9 +4,9 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="./index.php">
-            <img src="images/logo.png.png" alt="">
+            
             <span>
-              MCultural
+              Mercado Cultural
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
