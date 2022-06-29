@@ -13,6 +13,9 @@ include_once './includes/header.php';
 
   <!-- health section -->
 
+  <div class="box2">
+ <div class="bt2n_container">
+
   <section class="health_section layout_padding">
     <div class="health_carousel-container">
       <h2 class="text-uppercase">
@@ -21,43 +24,42 @@ include_once './includes/header.php';
 
 
       <div class="carousel-wrap layout_padding2">
-
+      <div class=" owl-1o">
+        
       <?php
                 $sql = "SELECT * FROM produtos";
                 $result = mysqli_query($conn, $sql);
-                $contador = 1;
+                $contador =4;
                 $linha = 1;
                 $situacao = "active";
                 while($dados = mysqli_fetch_assoc($result)){
-                // valida a opcao co item
-                if( $contador == 1 ){
-                  
-                  if( $linha > 1 ){
-                    $situacao = "";
-                  }
+                
                 ?>
 
-        <div class="owl-carousel owl-1o">
-          <div class="item" <?php echo $situacao;?>>
-            <div class="box2">
-              <div class="bt2n_container">
-              <?php
-                }
-                  ?>
-                    <div class="img-box">
-                      <a href="produtos-lista.php?pais=<?php echo $dados['produto_id']?>">
+<div class="img-box">
+<div class="col-lg-12 col-md-7">
+                      <a href="product_detail.php?produto=<?php echo $dados['produto_ID']?>">
                         <img src="images/Prod/<?php echo $dados['imagem'];?>" alt="<?php echo $dados['produto_nome'];?>">
                       </a>
                     </div>
+                    <a href="">
+                  Buy Now
+                </a>
+              </div>
+             
+          <div class="item" <?php echo $situacao;?>>
+
+              <?php
+                
+                  ?>
+                  <div>
+               
 
                     <?php
                   // soma o contador
                   $contador++;
-                  // faz o reset do valor
-                  if( $contador > 4 ){
-                    $contador = 1;
-                    $linha++;
-                  }
+                
+                  
                   // escreve o contador
                 }
                 ?>

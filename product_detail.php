@@ -8,8 +8,8 @@ include_once './includes/header.php';
 <body>
 
     <?php
-    
-    $sql = 'SELECT * FROM produtos, paises';
+    $produto_id = $_GET['produto'];
+    $sql = "SELECT * FROM produtos AS p INNER JOIN paises AS pa ON p.pais_id = pa.PaisID WHERE p.produto_ID = {$produto_id}";
     $result = mysqli_query($conn, $sql);
     $dados = mysqli_fetch_assoc($result);
     
@@ -28,7 +28,7 @@ include_once './includes/header.php';
                     <div class="detail">
                         <?php echo $dados['produto_ID']?>
                         <h3><?php echo $dados['produto_nome'];?></h3>
-                        <hp><?php echo "Balas de Mix de Frutas"?></hp>
+    
                         <h6><?php echo 'R$ '.$dados['produto_valor'].',00'?></h6>
                         <h6><?php echo $dados['pais_ID'].$dados['Nome']?></h6>
                     </div>
