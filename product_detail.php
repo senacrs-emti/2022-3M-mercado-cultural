@@ -26,11 +26,20 @@ include_once './includes/header.php';
                 <!-- detalhes escritos sobre o produto, como o nome, sobre o produto em si, preço, etc. etc.  -->
                 <div class="detail-prod">
                     <div class="detail">
-                        <?php echo $dados['produto_ID']?>
+                        <h6><?php echo $dados['produto_ID'];?></h6>
                         <h3><?php echo $dados['produto_nome'];?></h3>
+<<<<<<< HEAD
     
                         <h6><?php echo 'R$ '.$dados['produto_valor'].',00'?></h6>
                         <h6><?php echo $dados['pais_ID'].$dados['Nome']?></h6>
+=======
+                        
+                        <h5><?php echo $dados['descricao']?></h5>
+
+                        <h6><?php echo 'R$ '.$dados['produto_valor'].',00';?></h6>
+                        <h6><?php echo $dados['pais_ID'];?></h6>
+                        
+>>>>>>> ac503a24b44a74700a1afd74a3541f6937824611
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
@@ -84,6 +93,22 @@ include_once './includes/header.php';
         h6{
             color: #696969;
             
+        }
+        h5{
+
+            align-items: center;
+
+        }
+        .btn_container{
+            margin: 100px 0px 0px 0px;
+        }
+
+        .btn_container a{
+            margin: 0px 10px 0px 0px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: 10px;
         }
  
 
