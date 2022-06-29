@@ -80,7 +80,7 @@ include_once './includes/header.php';
         align-items: center;
         position: static;
         border: 0;
-        padding: 80px 0px 0px 0px;
+        padding: 10px 0px 0px 90px;
         }
 
         .product{
@@ -93,8 +93,9 @@ include_once './includes/header.php';
             border: 1px;
             margin-bottom: 1em;
             padding: 0.2em 0.6em;
-            position:relative;
-            display:inline;
+            align-items: center;
+            position: relative;
+            display:static;
         }
 
         .detail-prod{
@@ -104,7 +105,7 @@ include_once './includes/header.php';
             margin-bottom: 1em;
             padding: 0.2em 0.6em;
             position:relative;
-            display:inline;
+            display:static;
         }
 
         h6{
@@ -113,11 +114,11 @@ include_once './includes/header.php';
         }
         h5{
 
-            align-items: center;
+           
 
         }
         .btn_container{
-            margin: 100px 0px 0px 0px;
+            margin: 50px 0px 0px 0px;
         }
 
         .btn_container a{
