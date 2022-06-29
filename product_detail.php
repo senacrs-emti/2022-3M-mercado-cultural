@@ -8,10 +8,21 @@ include_once './includes/header.php';
 <body>
 
     <?php
+<<<<<<< Updated upstream
     $produto_id = $_GET['produto'];
     $sql = "SELECT * FROM produtos AS p INNER JOIN paises AS pa ON p.pais_id = pa.PaisID WHERE p.produto_ID = {$produto_id}";
     $result = mysqli_query($conn, $sql);
     $dados = mysqli_fetch_assoc($result);
+=======
+    $produto = $_GET['produto'];
+    $sql = "SELECT * FROM `produtos` AS p INNER JOIN paises AS pa ON p.pais_ID = pa.PaisID WHERE produto_ID = {$produto}";
+    $res = mysqli_query ($conn, $sql);
+    $reg = mysqli_fetch_assoc($res);
+
+    echo '<pre>';
+    print_r($reg);
+    echo '</pre>';
+>>>>>>> Stashed changes
     
     ?>
 
@@ -20,7 +31,13 @@ include_once './includes/header.php';
             <div class="prod-detail">
                 <div class="img-product">
                     <!-- foto do produto  -->
+<<<<<<< Updated upstream
                     <img src="images/Prod/<?php echo $dados['imagem'];?>" alt="">
+=======
+                    <a href="produtos-lista.php?produtos=<?php echo $dados['PaisID']?>">
+                    <img src="images/Prod/<?php echo $dados['Produto'];?>" alt="<?php echo $dados['Nome'];?>">
+                  </a>
+>>>>>>> Stashed changes
 
                 </div>
                 <!-- detalhes escritos sobre o produto, como o nome, sobre o produto em si, preço, etc. etc.  -->

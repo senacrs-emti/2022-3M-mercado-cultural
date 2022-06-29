@@ -36,8 +36,19 @@ include_once './includes/header.php';
                 
                 ?>
 
+<<<<<<< Updated upstream
 <div class="img-box">
 <div class="col-lg-12 col-md-7">
+=======
+        <div class="owl-carousel owl-1o">
+          <div class="item" <?php echo $situacao;?>>
+            <div class="box2">
+              <div class="bt2n_container">
+              <?php
+                }
+                  ?>
+                    <div class="img-box">
+>>>>>>> Stashed changes
                       <a href="product_detail.php?produto=<?php echo $dados['produto_ID']?>">
                         <img src="images/Prod/<?php echo $dados['imagem'];?>" alt="<?php echo $dados['produto_nome'];?>">
                       </a>
