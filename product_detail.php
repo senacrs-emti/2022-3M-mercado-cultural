@@ -26,11 +26,11 @@ include_once './includes/header.php';
                 <!-- detalhes escritos sobre o produto, como o nome, sobre o produto em si, preço, etc. etc.  -->
                 <div class="detail-prod">
                     <div class="detail">
-                        <?php echo $dados['produto_ID']?>
+                        <h6><?php echo $dados['produto_ID'];?></h6>
                         <h3><?php echo $dados['produto_nome'];?></h3>
-                        <hp><?php echo "Balas de Mix de Frutas"?></hp>
-                        <h6><?php echo 'R$ '.$dados['produto_valor'].',00'?></h6>
-                        <h6><?php echo $dados['pais_ID'].$dados['Nome']?></h6>
+                        
+                        <h6><?php echo 'R$ '.$dados['produto_valor'].',00';?></h6>
+                        <h6><?php echo $dados['pais_ID'];?></h6>
                     </div>
                     <!-- botao para compra do produto  -->
                     <div class="btn_container">
