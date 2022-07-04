@@ -36,7 +36,7 @@ include_once './includes/header.php';
                 </a>
               </div>
               <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="images/Prod/p_cor_2.png" alt="">
               </div>
               <div class="detail-box">
                 <div class="star_container">
