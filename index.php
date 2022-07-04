@@ -8,8 +8,8 @@ include_once './includes/header.php';
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://i0.statig.com.br/bancodeimagens/bx/ry/fv/bxryfvt3vi76x0obfhixvrj8x.jpg" alt="First slide">
+    <div id ="terra">
+    <img src="images/banner-1.png" alt="">
     </div>
     
   </div>
