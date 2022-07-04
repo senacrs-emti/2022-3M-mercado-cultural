@@ -294,34 +294,40 @@ $result = mysqli_query($conn,"SELECT * FROM paises") or die("Erro");
 
   <!-- banner pag principal-->
 
-  <section class="discount_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 col-md-5 offset-md-2">
-          <div class="detail-box">
-            <h2>
-              compre conosco <br>
-              agora <br>
-              
-              <span>
-                10% desconto
-              </span>
 
-            </h2>
-            <p>
-              produtos do mundo inteiro em sua mão
-            </p>
-            <div>
-              <a href="buy.php">
-                compre agora
-              </a>
+  <section class="discount_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-5 offset-md-2">
+            <div class="detail-box">
+              <h2>
+                compre agora <br>
+                produtos variados <br>
+                
+                <span>
+                  10% desconto
+                </span>
+
+              </h2>
+              <p>
+               produtos de todo o mundo em sua mão
+              </p>
+              <div>
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-5">
+          <div class="img-box" id="banner-2">
+              <img src="images/bannerbf.png" alt="">
             </div>
           </div>
         </div>
-    
-      </div>
-    </div>
-  </section>
+            </div>
+        </section>
+
 
 
   <!-- banner pag principal -->
